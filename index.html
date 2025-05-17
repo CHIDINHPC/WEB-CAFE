@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quản Lý Quán Cà Phê</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+  <h1>☕ Phần Mềm Quản Lý Quán Cà Phê</h1>
+
+  <div class="section">
+    <h2>Chọn Bàn</h2>
+    <select id="banSelect">
+      <option value="Bàn 1">Bàn 1</option>
+      <option value="Bàn 2">Bàn 2</option>
+      <option value="Bàn 3">Bàn 3</option>
+    </select>
+  </div>
+
+  <div class="section menu">
+    <h2>Menu Thức Uống</h2>
+    <div id="menu"></div>
+
+    <h3>Thêm Món Mới</h3>
+    <input type="text" id="tenMonMoi" placeholder="Tên món" />
+    <input type="number" id="giaMonMoi" placeholder="Giá" />
+    <button onclick="themMon()">Thêm Món</button>
+
+    <div id="formSuaMon" style="display:none;">
+      <h3>Sửa Món</h3>
+      <input type="text" id="tenMonSua" placeholder="Tên món" />
+      <input type="number" id="giaMonSua" placeholder="Giá" />
+      <button onclick="capNhatMon()">Cập Nhật</button>
+      <button onclick="huySuaMon()" style="margin-left:10px; background:#c0392b;">Hủy</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Hóa Đơn</h2>
+    <ul id="dsHoaDon"></ul>
+    <div class="order-summary">
+      <p><strong>Tổng tiền:</strong> <span id="tongTien">0</span> VND</p>
+    </div>
+    <button class="btn-action" onclick="inHoaDon()">In Hóa Đơn</button>
+    <button class="btn-action" onclick="thanhToan()">Thanh Toán</button>
+    <button class="btn-action btn-reset" onclick="xoaDon()">Xóa Đơn</button>
+  </div>
+
+  <div class="section">
+    <h2>Chi Tiết Giao Dịch</h2>
+    <ul id="lichSuHoaDon"></ul>
+  </div>
+
+  <div class="section">
+    <h2>Thống Kê Doanh Thu Trong Ngày</h2>
+    <ul id="tkDoanhThu"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

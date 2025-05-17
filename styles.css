@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 28px;
+    background: linear-gradient(to right, #ffe7d1, #fff7f0);
+    color: #333;
+  }
+  h1,
+  h2 {
+    color: #4b2e2e;
+  }
+  .section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 35px;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  }
+  .menu button {
+    margin: 10px 10px 10px 0;
+    padding: 12px 20px;
+    background: #a0522d;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+  }
+  .menu button:hover {
+    background: #81492b;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  .btn-action {
+    margin-top: 10px;
+    background: #008080;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .btn-reset {
+    background: crimson;
+    margin-left: 10px;
+  }
+  .order-summary {
+    background-color: #fdf0e6;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  input[type='text'],
+  input[type='number'] {
+    padding: 6px;
+    margin: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  .menu-item {
+    margin-bottom: 8px;
+  }
+  .menu-item span {
+    display: inline-block;
+    min-width: 150px;
+  }
+  .menu-item button {
+    margin-left: 6px;
+    padding: 4px 10px;
+    font-size: 14px;
+    background-color: #6a4f4f;
+    border-radius: 5px;
+    border: none;
+    color: white;
+  }
+  .menu-item button:hover {
+    background-color: #8b6767;
+  }
+  #formSuaMon {
+    margin-top: 15px;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    max-width: 350px;
+  }
+  
